@@ -22,7 +22,7 @@ Yeah. To know more about the above mentioned libraries go to the following link:
 4. LM358 Dual OpAmp IC
 
 ### Circuit Diagram and working
-![CircuitDiagram](https://lh4.googleusercontent.com/6dcwu8P-1EGTOZaoNeOEsGeQ8UvL9MDYCJPEN_qkjR4dVPr4yWAU4p42tVC1FEKhW3JD2AdIQPvtm0U=w1920-h950)<br>
+![CircuitDiagram](https://camo.githubusercontent.com/8640fb891ddfd8c2b2df5d774fd937d076d04943/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f366463777538502d314547544f5a616f4e654f45734765513855764c394d4459434a50454e5f716b6a5234645650723479574155347034327456433146454b6857334a4432416449515076746d30553d77313932302d68393530)<br>
 The piezo sensor is connected to a non-inverting terminal of an OpAmp that produces a mild 3.22 gain (1+100/222). This amplified output is then fed to another OpAmp working as a comparator. The voltage drop across the 100K potentiometer connected to the negetive terminal of the comparator acts as a threshold. The comparator outputs a high voltage only when the voltage at the positive terminal of the comparator is higher than the voltage drop across the 100K pot.<br>
 This comparator output is read by the Arduino. A successfully detected knock produces a high at the comparator output. The threshold can be adjusted by adjusting the potentiometer.
 The resistor values can be adjusted as per gain and threshold requirements.
