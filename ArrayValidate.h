@@ -7,12 +7,12 @@
   #include "WProgram.h"
 #endif
 
-class PatternCheck
+class ArrayValidate
 {
   public:
     //constructor
-    PatternCheck(int *mainArray, int maximumRows,int maximumColumns, int discardingLimit, int averageDiscardingLimit);
-    int checkPattern(int *compareArray, int caLen);
+    ArrayValidate(int *mainArray, int maximumRows,int maximumColumns, int discardingLimit, int averageDiscardingLimit);
+    int validateArray(int *compareArray, int caLen);
   private:
     int _mainRows;
     int _mainColumns;

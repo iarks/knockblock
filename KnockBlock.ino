@@ -16,7 +16,7 @@
 //Include Libraries
 #include <Ethernet.h>
 #include "PiezoListener.h"
-#include "PatternCheck.h"
+#include "ArrayValidate.h"
 
 //Pin Definitions
 const int piezoSensor = 8;     // Piezo sensor on pin 8.
@@ -121,8 +121,8 @@ void loop()
 
 void check()
 {
-  PatternCheck *a = new PatternCheck(secretCode[0], maximumTriggers, maximumIntervals, discardingLimit, averageDiscardingLimit);
-  index = a->checkPattern(sensorReadings,currentIntervalNumber);
+  ArrayValidate *a = new ArrayValidate(secretCode[0], maximumTriggers, maximumIntervals, discardingLimit, averageDiscardingLimit);
+  index = a->validateArray(sensorReadings,currentIntervalNumber);
 //  Serial.println("----------------------------------------returned index number---------------------------");
 //  Serial.println(index);
   delete a;

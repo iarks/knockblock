@@ -1,6 +1,6 @@
-#include "PatternCheck.h"
+#include "ArrayValidate.h"
 
-PatternCheck::PatternCheck(int *mainArray, int maximumRows,int maximumColumns, int discardingLimit, int averageDiscardingLimit)
+ArrayValidate::ArrayValidate(int *mainArray, int maximumRows,int maximumColumns, int discardingLimit, int averageDiscardingLimit)
 {
   _mainRows=maximumRows;
   _mainColumns=maximumColumns;
@@ -8,7 +8,7 @@ PatternCheck::PatternCheck(int *mainArray, int maximumRows,int maximumColumns, i
   _averageDiscardingLimit=averageDiscardingLimit;
   _mainArray=mainArray;
 }
-int PatternCheck::checkPattern(int *compareArray, int caLen)
+int ArrayValidate::validateArray(int *compareArray, int caLen)
 {
   int i=0,j=0,element;
   
